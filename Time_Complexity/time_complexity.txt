@@ -1,0 +1,7 @@
+Time Complexity and Space Complexity
+
+-> Time taken by a machine to process that code 😑 ❌ because each system takes different time based on its hardware config.
+-> TC: The rate at which time taken increases/decreases wrt input size.  
+- Its not measured in terms of seconds or ms, instead it is measured in notations such as:
+1. O() ie. (big o)
+2.
