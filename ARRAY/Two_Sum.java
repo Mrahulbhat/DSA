@@ -11,14 +11,28 @@ import java.util.*;
 //Optimal Solution TC=O(N) SC=O(N)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> result = new HashMap<>(); 
+        Map<Integer, Integer> result = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i]; 
-            if (result.containsKey(complement)) {
-                return new int[] { i, result.get(complement) };
+            int complement = target - nums[i];
+            if (result.containsKey(complement)) { 
+                return new int[] { result.get(complement),i };
             }
+            result.put(nums[i],i);
         }
         return new int[] {};
+    }
+}
+
+public class Two_Sum {
+    public static void main(String args[]) {
+        int[] nums = { 2, 7, 3, 6, 11, 15 };
+        int target = 9;
+
+        Solution s = new Solution();
+
+        int[] result = new int[2];
+        result = s.twoSum(nums, target);
+        System.out.println(Arrays.toString(result));
     }
 }
 
@@ -36,18 +50,3 @@ class Solution {
 // return new int [] {}; //return empty array if no match
 // }
 // }
-
-// Optimal Solution
-
-public class Two_Sum {
-    public static void main(String args[]) {
-        int[] nums = { 2, 7, 3, 6, 11, 15 };
-        int target = 9;
-
-        Solution s = new Solution();
-
-        int[] result = new int[2];
-        result = s.twoSum(nums, target);
-        System.out.println(Arrays.toString(result));
-    }
-}
