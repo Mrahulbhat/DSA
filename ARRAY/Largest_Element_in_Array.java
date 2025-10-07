@@ -1,4 +1,3 @@
-package ARRAY;
 public class Largest_Element_in_Array {
     public static int find_largest_element(int [] arr){
         int max=arr[0];

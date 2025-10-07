@@ -1,5 +1,3 @@
-package ARRAY;
-
 /*
 Optimal Solution - easy - without sorting : Don't do sorting and finding second largest from back.
 You are simply wasting more time (TC) by sorting entire array and then finding it

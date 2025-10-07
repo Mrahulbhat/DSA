@@ -1,5 +1,3 @@
-package ARRAY;
-
 // TC = O(N) SC=O(1) OPTIMAL APPROACH
 
 public class Buy_and_sell_Stocks {

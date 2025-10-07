@@ -1,5 +1,3 @@
-package ARRAY;
-
   /*
         Note: Reverse the same array
         Approach 1 : - (avg) We will create a temp array, reverse it and store back into original array
